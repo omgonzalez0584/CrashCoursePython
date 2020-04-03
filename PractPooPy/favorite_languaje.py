@@ -1,0 +1,14 @@
+#Uso de la clase OrderedDict
+from collections import OrderedDict
+
+favorite_language = OrderedDict()#Instanciando objeto
+
+#Agregando clave / valor en el diccionario
+favorite_language['jen'] = 'python'
+favorite_language['sarah'] = 'c'
+favorite_language['edward'] = 'ruby'
+favorite_language['phil'] = 'python'
+
+for name,language  in favorite_language.items():
+    print(name.title() + "'s favorite language is " +
+            language.title()+ ".")

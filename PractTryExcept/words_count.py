@@ -1,0 +1,24 @@
+#Contador de palabras
+
+def count_words(filename):
+    """Count the approximate number of word in a file """
+    try:
+        with open(filename) as file:
+            contents = file.read()
+    except FileNotFoundError:
+        pass #Para saltar el mensaje de exeption 
+        #msg = "Sorry , the file " + filename + "does not exist. "
+        #print(msg)
+    else:
+        #Count approximate number of words in the file
+        words = contents.split()
+        num_words = len(words)
+        print("The file " + filename + " has about " + str(num_words) + " words.")
+
+
+#Programa principal
+
+#lista con los archivos
+filenames = ['alice.txt','siddhartha.txt','moby_dick.txt','little_women.txt']
+for filename in filenames:
+    count_words(filename)

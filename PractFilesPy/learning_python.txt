@@ -1,0 +1,4 @@
+In Python you can to learn functions
+In Python you can to learn dictionaries
+In Python you can to use POO
+
